@@ -11,7 +11,7 @@ class myapps:
         self.canvas= tk.Canvas(background="black",width=480,height=480)
         self.canvas.pack(padx=0,pady=0)
         self.colors=["blue","red","green","yellow","black"]
-        self.angle=359
+        self.angle=359.99
         canv=self.canvas
         for a in range(len(self.colors)-1):
             canv.create_arc(0,0,480,480,start=0,extent=self.angle-(a*80),fill=self.colors[a])
