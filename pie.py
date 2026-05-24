@@ -14,7 +14,7 @@ class myapps:
         self.angle=359
         canv=self.canvas
         for a in range(len(self.colors)-1):
-            canv.create_arc(0,0,480,480,start=0,extent=self.angle-(a*20),fill=self.colors[a])
+            canv.create_arc(0,0,480,480,start=0,extent=self.angle-(a*45),fill=self.colors[a])
  
 
 
