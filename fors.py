@@ -1,17 +1,16 @@
-def process(a:int):
-     print(a)
+def process(a: int):
+    print(a)
 
-
-def fors(_restarts,procs):
-    
-    _v=vars()
-    _v.update(dict(_restarts))
-    
+# Use **kwargs to cleanly accept any dynamic dictionary arguments
+def fors(_restarts, procs):
+    frommm = _restarts['frommm']
+    intos = _restarts['intos']
+    steeps = _restarts['steeps']
     while frommm < intos:
-         procs(frommm)
-         frommm=frommm+steeps
+        procs(frommm)
+        frommm += steeps
 
-_restarts={'frommm':0 ,'intos':10 , 'steeps':1 }
-_v=vars()
-_v.update(_restarts)
+_restarts = {'frommm': 0, 'intos': 10, 'steeps': 1}
+
+# Explicitly unpack the dictionary using **
 fors(_restarts,process)
