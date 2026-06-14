@@ -30,7 +30,7 @@ int main()
         char *sss=ss1;
         char *ttt=sss;
 
-        cls3(0x2070);
+        cls3(0x20f0);
         copys();
         if (argv[0]=='\0' || argvs[0]=='\0' || argvs[2]=='\0'){
             nt=tcopys();
@@ -50,13 +50,16 @@ int main()
 			t=reads(f1,sss,bufsize/2);
 			sss[bufsize+1]=0;
 			sss[t+1]=0;
-
+                        sss[t+2]=0;
+                        sss[t+3]=0;
+                        sss[t+4]=0;
+                        sss[t+5]=0;
 			closes(f1);
 	
         sss=ss1+nt;
 	ttt=sss;
-    if (ttt>ss1+t)systems("cmd.com");
-       while (ttt < ss1 + t) {
+if (*ttt==0)systems("cmd.com");
+while (*ttt!=0) {
     if (*ttt == '\n') {
         *ttt = '\0';
         ttt++;
@@ -65,16 +68,15 @@ int main()
     ttt++;
 }
         trcopys(ttt-ss1);
-       
-      
-	while(nn==0){
-	    nn=lowercmp(sss,"exit");
+        nn=1;
+	while(nn){
+	    nn=0;
 	    if(nn==0){
                 n=1;
                 nnn=0;
                 while(n){
                   sss1[nnn]=sss[nnn];
-                  if(sss1[nnn]==32 || sss1[nnn]==0){
+                  if(sss[nnn]==32 || sss[nnn]==0 || sss[nnn]==10 || sss[nnn]==13){
                       sss1[nnn]=0;
                       n=0;
                   }
@@ -92,6 +94,7 @@ int main()
 	        }
 	    }
             sss=ttt;
+            if (*ttt==0)nn=0;
 	    
 	}
         ttcopys(0);

@@ -21,7 +21,7 @@ int main()
 	char sss[1080];
 	char *argv0=0x82;
         copys();
-        cls3(0x2070);
+        cls3(0x20f0);
 	sputs(argv0);
 	while(n==0){
 	  n=keyit();
@@ -233,6 +233,7 @@ _systems:
 systems2:
     mov ax,1
     ret
+
 
 #endasm
 

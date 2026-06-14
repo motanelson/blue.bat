@@ -31,7 +31,7 @@ int main()
 		
 		
                         copys();
-                        cls3(0x2070);
+                        cls3(0x20f0);
                         
                         sputc(13);
                         sputc(10);

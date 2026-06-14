@@ -20,7 +20,7 @@ int main()
 	char n;
         keyit();
         nn=1;
-        cls3(0x2070);
+        cls3(0x20f0);
         while (nn){
             dates();
             sputs(" ");

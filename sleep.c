@@ -26,7 +26,7 @@ int main()
         n=(int)argv0[0];
         nn=0x30;
         n=n-nn;
-        cls3(0x2070);       
+        cls3(0x20f0);       
 	sleep(n);
         systems("sh.com");
 

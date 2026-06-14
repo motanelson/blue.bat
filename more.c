@@ -38,7 +38,7 @@ int main()
 		
                         copys();
 
-                        cls3(0x2070);
+                        cls3(0x20f0);
                         t=1;
                         n=filesizes();
                        

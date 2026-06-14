@@ -23,7 +23,7 @@ int main()
         
         char argv0[89];
         char *argv=0x82;
-        cls3(0x2070);
+        cls3(0x20f0);
 	
 		
 	

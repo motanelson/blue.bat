@@ -18,7 +18,7 @@ int main()
         char *rrr;
 	int nn;
 	int n=0;
-        cls3(0x2070);
+        cls3(0x20f0);
 	times();
         sputc(13);
         sputc(10);

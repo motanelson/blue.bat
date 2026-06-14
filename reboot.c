@@ -21,7 +21,7 @@ int main()
 	int n=0;
 	char sss[128];
 	char sss1="!!!!!!";
-	cls3(0x2070);
+	cls3(0x20f0);
 	sputs("reboot operation system......\r\n");
 	sputc(13);
 	sputc(10);

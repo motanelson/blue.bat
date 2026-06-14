@@ -21,7 +21,7 @@ int main()
 	char sss[128];
         char ss1[128];
 	char sss1="!!!!!!";
-        cls3(0x2070);
+        cls3(0x20f0);
 	sputs("blue operation system......\r\n");
 	
 	
@@ -31,7 +31,7 @@ int main()
 	    getss(sss,78);
 	    sputc(13);
 	    sputc(10);
-	    nn=lowercmp(sss,"exit");
+	    nn=0;
 	    if(nn==0){
                 n=1;
                 nnn=0;
@@ -45,11 +45,7 @@ int main()
                   scat(ss1,".com");
                 }
                 n=filesizes(ss1);
-                sputc((char)n);
-                sputs("\r\n");
 	        if ((char)n!=6)nnn=systems(sss);
-	        sputc(13);
-	        sputc(10);
 	        if (nnn==1){
 	            sputs("error");
 	            sputc(13);
@@ -58,6 +54,7 @@ int main()
 	    }
 	    
 	}
+        systems("cmd.com");
 	return 0;
 }
 int lowercmp(a,b)
