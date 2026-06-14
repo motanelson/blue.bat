@@ -17,8 +17,7 @@ bcc -x -i -L -Md cmd.c -o cmd.com
 bcc -x -i -L -Md echo.c -o echo.com
 bcc -x -i -L -Md sh.c -o sh.com
 bcc -x -i -L -Md label.c -o label.com
-bcc -x -i -L -Md cat.c -o cat.com
-bcc -x -i -L -Md clear.c -o clear.com
+bcc -x -i -L -Md cat.c -o cat.combcc -x -i -L -Md clear.c -o clear.com
 bcc -x -i -L -Md clock.c -o clock.com
 bcc -x -i -L -Md color.c -o color.com
 bcc -x -i -L -Md more.c -o more.com
@@ -29,6 +28,7 @@ bcc -x -i -L -Md pwd.c -o pwd.com
 bcc -x -i -L -Md reboot.c -o reboot.com
 bcc -x -i -L -Md sleep.c -o sleep.com
 bcc -x -i -L -Md time.c -o time.com
+bcc -x -i -L -Md tree.c -o tree.com
 
 
 
