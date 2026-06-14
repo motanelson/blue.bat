@@ -20,6 +20,8 @@ bcc -x -i -L -Md label.c -o label.com
 bcc -x -i -L -Md cat.c -o cat.com
 bcc -x -i -L -Md clear.c -o clear.com
 bcc -x -i -L -Md clock.c -o clock.com
+bcc -x -i -L -Md color.c -o color.com
+bcc -x -i -L -Md date.c -o date.com
 
 cp *.lst CD_root/isolinux/
 
