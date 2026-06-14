@@ -32,14 +32,11 @@ int main()
 
         cls3(0x2070);
         copys();
-        sputs("#\r\n");
         if (argv[0]=='\0' || argvs[0]=='\0' || argvs[2]=='\0'){
-            sputs("x\n\r");
             nt=tcopys();
-            sputs("'\n\r");
         }
 	
-                        sputs("t\n\r");
+                        
                         t=1;
                         n=filesizes(argv);
                         
@@ -56,10 +53,10 @@ int main()
 
 			closes(f1);
 	
-        
+        sss=ss1+nt;
 	ttt=sss;
-    if (ttt>sss+nt)systems("cmd.com");
-       while (ttt < sss + nt) {
+    if (ttt>sss+t)systems("cmd.com");
+       while (ttt < sss + t) {
     if (*ttt == '\n') {
         *ttt = '\0';
         ttt++;
@@ -67,7 +64,7 @@ int main()
     }
     ttt++;
 }
-        trcopys(ttt-sss);
+        trcopys(ttt-ss1);
        
       
 	while(nn==0){
@@ -97,6 +94,7 @@ int main()
             sss=ttt;
 	    
 	}
+        systems("cmd.com");
 	return 0;
 }
 int lowercmp(a,b)
