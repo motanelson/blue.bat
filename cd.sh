@@ -24,6 +24,7 @@ bcc -x -i -L -Md color.c -o color.com
 bcc -x -i -L -Md more.c -o more.com
 bcc -x -i -L -Md ls.c -o ls.com
 bcc -x -i -L -Md pointer.c -o pointer.com
+bcc -x -i -L -Md printf.c -o printf.com
 
 cp *.lst CD_root/isolinux/
 
