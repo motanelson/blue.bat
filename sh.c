@@ -55,8 +55,8 @@ int main()
 	
         sss=ss1+nt;
 	ttt=sss;
-    if (ttt>sss+t)systems("cmd.com");
-       while (ttt < sss + t) {
+    if (ttt>ss1+t)systems("cmd.com");
+       while (ttt < ss1 + t) {
     if (*ttt == '\n') {
         *ttt = '\0';
         ttt++;
@@ -94,6 +94,7 @@ int main()
             sss=ttt;
 	    
 	}
+        ttcopys(0);
         systems("cmd.com");
 	return 0;
 }
@@ -203,6 +204,8 @@ char *s1;
 .globl _reads
 .globl _tcopys
 .globl _trcopys
+.globl _ttcopys
+
 
 _cls3:
     mov si,sp
@@ -282,7 +285,23 @@ _copys3:
     jnz _copys3
     pop ds
     ret
-
+_ttcopys:
+    mov si,sp
+    add si,*2
+    mov dx,[si]
+    mov di,*0x82
+    push ds
+    mov ax,*0x9000
+    mov ds,ax
+    mov si,*0x0
+    seg ds
+    mov [si],dx
+    inc si
+    inc si
+    seg ds
+    mov [si],dx
+    pop ds
+    ret
 _sputc:
     mov si,sp
     add si,*0x2
