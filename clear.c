@@ -22,7 +22,7 @@ int main()
 	char sss[128];
 	char sss1="!!!!!!";
 	
-	clear(0x70);
+	clear(0x07);
         systems("sh.com");
         return 0;
 }
