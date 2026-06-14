@@ -27,6 +27,8 @@ bcc -x -i -L -Md pointer.c -o pointer.com
 bcc -x -i -L -Md printf.c -o printf.com
 bcc -x -i -L -Md pwd.c -o pwd.com
 bcc -x -i -L -Md reboot.c -o reboot.com
+bcc -x -i -L -Md sleep.c -o sleep.com
+
 
 
 cp *.lst CD_root/isolinux/
