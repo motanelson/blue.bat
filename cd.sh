@@ -23,6 +23,7 @@ bcc -x -i -L -Md clock.c -o clock.com
 bcc -x -i -L -Md color.c -o color.com
 bcc -x -i -L -Md more.c -o more.com
 bcc -x -i -L -Md ls.c -o ls.com
+bcc -x -i -L -Md pointer.c -o pointer.com
 
 cp *.lst CD_root/isolinux/
 
