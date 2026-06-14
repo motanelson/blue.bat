@@ -36,7 +36,7 @@ int main()
                         sputc(13);
                         sputc(10);
                         
-	systems("cmd.com");
+	systems("sh.com");
 				
 	return 0;
 	
