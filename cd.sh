@@ -16,6 +16,7 @@ bcc -c -Md libdos.c -o libdos.a
 bcc -x -i -L -Md cmd.c -o cmd.com
 bcc -x -i -L -Md echo.c -o echo.com
 bcc -x -i -L -Md sh.c -o sh.com
+bcc -x -i -L -Md label.c -o label.com
 cp *.lst CD_root/isolinux/
 
 cp *.c32 CD_root/isolinux/
